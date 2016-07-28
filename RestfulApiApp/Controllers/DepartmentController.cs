@@ -30,19 +30,48 @@ namespace RestfulApiApp.Controllers
             };
         }
 
-        // api Get: /api/department
+        /// <summary>
+        /// Gets the department collection.
+        /// </summary>
+        /// <returns>Department collection</returns>
+        /// GET: /api/department
         public IEnumerable<Department> Get()
         {
             return departments;
         }
 
-        // api Get: /api/department/id
-        public Department GetDepartmentByID(int id)
+        /// <summary>
+        /// Gets the department by id
+        /// </summary>
+        /// <returns>Ok message and department object if OK, otherwise, not found</returns>
+        /// GET: /api/department/id
+        //public Department GetDepartmentByID(int id)
+        //{
+        //    return departments.FirstOrDefault(x => x.ID == id);
+        //}
+
+        /// <summary>
+        /// Gets the department by id
+        /// </summary>
+        /// <returns>Ok message and department object if OK, otherwise, not found</returns>
+        /// GET: /api/department/id
+        public IHttpActionResult GetDepartmentByID(int id)
         {
-            return departments.FirstOrDefault(x => x.ID == id);
+            var department = departments.FirstOrDefault(x => x.ID == id);
+            if (department == null)
+            {
+                //Return not found result
+                return NotFound();
+            }
+            //Return successful ok result
+            return Ok(department);
         }
 
-        // api Get: /api/department/id/employees
+        /// <summary>
+        /// Gets the employees belonging to a department
+        /// </summary>
+        /// <returns>Employees object with the information</returns>
+        /// GET: /api/department/id/employees
         [Route("api/department/{id:int:min(1):max(2):maxlength(1)}/employees")]
         public IEnumerable<Employee> GetEmployeesByDepartmentID(int id)
         {

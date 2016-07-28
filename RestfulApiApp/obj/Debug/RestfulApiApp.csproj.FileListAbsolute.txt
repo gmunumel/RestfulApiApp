@@ -88,3 +88,7 @@ c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiA
 c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\obj\Debug\RestfulApiApp.csprojResolveAssemblyReference.cache
 c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\obj\Debug\RestfulApiApp.dll
 c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\obj\Debug\RestfulApiApp.pdb
+c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\bin\System.Web.Cors.dll
+c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\bin\System.Web.Http.Cors.dll
+c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\bin\System.Web.Http.Cors.xml
+c:\users\ext8177\documents\visual studio 2015\Projects\RestfulApiApp\RestfulApiApp\bin\RestfulApiApp.XML
